@@ -6,7 +6,19 @@ const SPOTIFY_REGISTER_URL = 'https://partner-provisioning.spotify.com/starbucks
 
 const usernames = ['US8547584', 'US8547585']; // Remplacez par vos noms d'utilisateur Starbucks
 const lastName = 'Smith'; // Remplacez par votre nom de famille
-const emails = ['tstpu7768735@aol.com', 'ritrumoyda@gufum.com', 'irrrw4237454@aol.com', 'lelado7551@skrank.com']; // Remplacez par votre liste d'emails
+// const emails = ['tstpu7768735@aol.com', 'ritrumoyda@gufum.com', 'irrrw4237454@aol.com', 'lelado7551@skrank.com', 'gtc1478gtc1@gmail.com'];
+const emails = [
+    'lelado7551@skrank.com',
+    'gtc1478gtc1@gmail.com',
+    'gtc1478gtc12@gmail.com',
+    'gtc1478gtc13@gmail.com',
+    'gtc1478gtc14@gmail.com',
+    'gtc1478gtc15@gmail.com',
+    'gtc1478gtc16@gmail.com',
+    'gtc1478gtc17@gmail.com',
+    'gtc1478gtc18@gmail.com',
+    'gtc1478gtc111@gmail.com'
+];
 const password = 'SPOTIFY12345'; // Remplacez par votre mot de passe
 
 (async () => {
