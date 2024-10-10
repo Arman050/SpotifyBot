@@ -72,7 +72,7 @@ const password = 'SPOTIFY12345'; // Remplacez par votre mot de passe
             await page.click('button[type="submit"]');
 
             // Attendre 2 secondes pour voir les résultats
-            await page.waitForTimeout(2000); // Remplacer par waitForTimeout
+            await new Promise(resolve => setTimeout(resolve, 2000)); // Remplacer par waitForTimeout
 
             console.log(`Bot a terminé les étapes pour ${email}.`);
         } catch (error) {
