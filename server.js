@@ -8,6 +8,9 @@ const usernames = ['US8547584', 'US8547585']; // Remplacez par vos noms d'utilis
 const lastName = 'Smith'; // Remplacez par votre nom de famille
 // const emails = ['tstpu7768735@aol.com', 'ritrumoyda@gufum.com', 'irrrw4237454@aol.com', 'lelado7551@skrank.com', 'gtc1478gtc1@gmail.com'];
 const emails = [
+    'tstpu7768735@aol.com',
+    'ritrumoyda@gufum.com',
+    'irrrw4237454@aol.com',
     'lelado7551@skrank.com',
     'gtc1478gtc1@gmail.com',
     'gtc1478gtc12@gmail.com',
