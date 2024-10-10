@@ -2,7 +2,7 @@ name: Run Puppeteer Bot
 
 on:
   schedule:
-    - cron: '0 2 * * *'  # Exécuter à 2h du matin chaque jour
+    - cron: '0 2 * * *'  # Exï¿½cuter ï¿½ 2h du matin chaque jour
   workflow_dispatch:
 
 jobs:
@@ -50,4 +50,4 @@ jobs:
 
       - name: Run Puppeteer bot
         run: |
-          node bot.js
+          node server.js
