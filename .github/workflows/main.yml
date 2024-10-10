@@ -2,7 +2,7 @@ name: Run Puppeteer Bot
 
 on:
   schedule:
-    - cron: '0 2 * * *'  # Ex�cuter � 2h du matin chaque jour
+    - cron: '0 2 * * *'  # Exécuter à 2h du matin chaque jour
   workflow_dispatch:
 
 jobs:
@@ -45,7 +45,12 @@ jobs:
             xdg-utils \
             wget
 
-      - name: Install dependencies
+      - name: Install Puppeteer and its dependencies
+        run: |
+          npm install puppeteer
+          npx puppeteer install
+
+      - name: Install other dependencies
         run: npm install
 
       - name: Run Puppeteer bot
