@@ -37,13 +37,13 @@ const password = 'SPOTIFY12345'; // Remplacez par votre mot de passe
             console.log(`Navigating to ${SPOTIFY_URL} for ${email}...`);
             await page.goto(SPOTIFY_URL, { waitUntil: 'networkidle0' });
 
-            await page.waitForSelector('#authorize-btn', { visible: true });
+            // await page.waitForSelector('#authorize-btn', { visible: true });
             await page.click('#authorize-btn');
 
             // Étape 2 : Attendre la redirection vers la page de connexion Spotify
             await page.waitForNavigation({ waitUntil: 'networkidle0' });
             console.log(`Navigating to ${SPOTIFY_LOGIN_URL}...`);
-            await page.goto(SPOTIFY_LOGIN_URL);
+            // await page.goto(SPOTIFY_LOGIN_URL);
 
             // Étape 3 : Se connecter à Spotify
             console.log(`Logging in with email: ${email}...`);
