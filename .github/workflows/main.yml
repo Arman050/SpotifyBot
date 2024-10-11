@@ -2,7 +2,7 @@ name: Run Puppeteer Bot
 
 on:
   schedule:
-    - cron: '10 0 * * *'  # Exécuter à 2h du matin chaque jour
+    - cron: '12 6 * * *'  # Exécuter à 2h du matin chaque jour
   workflow_dispatch:
 
 jobs:
