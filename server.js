@@ -138,7 +138,7 @@ const password = 'SPOTIFY12345'; // Remplacez par votre mot de passe
         const email = emails[i];
         const username = usernames[i % usernames.length]; // Gère le cas où le nombre d'e-mails est supérieur au nombre d'utilisateurs
 
-        const browser = await puppeteer.launch({ headless: false }); // Lancer le navigateur en mode headless
+        const browser = await puppeteer.launch({ headless: true }); // Lancer le navigateur en mode headless
         const page = await browser.newPage();
 
         try {
