@@ -172,7 +172,7 @@ const puppeteer = require('puppeteer');
 
 // Liste des emails
 const emails = [
-    'email'
+    'zpjheifou262@gmail.com',
 ];
 
 const SPOTIFY_SIGNUP_URL = 'https://www.spotify.com/be-nl/signup/?flow_ctx=daa65fb7-da58-413c-adcf-2a21e6af9e14%3A1728527182';
@@ -193,25 +193,24 @@ async function registerWithEmail(email) {
         // Step 3: Accepter les cookies
         await page.waitForSelector('#onetrust-accept-btn-handler', { visible: true });
         await page.click('#onetrust-accept-btn-handler');
-        await new Promise(resolve => setTimeout(resolve, 1000)); // Attendre 1 seconde
+        await new Promise(resolve => setTimeout(resolve, 1000));
 
         // Step 4: Cliquez sur le bouton pour passer à l'étape suivante
         await page.waitForSelector('button[data-testid="submit"]', { visible: true });
         await page.waitForFunction(() => {
             const button = document.querySelector('button[data-testid="submit"]');
-            return button && !button.disabled && button.offsetWidth > 0 && button.offsetHeight > 0; // Vérifier si le bouton est cliquable
+            return button && !button.disabled && button.offsetWidth > 0 && button.offsetHeight > 0;
         });
-        await page.click('button[data-testid="submit"]');
-        await new Promise(resolve => setTimeout(resolve, 2000)); // Attendre 2 secondes
+        // await page.click('button[data-testid="submit"]');
 
         // Attendre la navigation vers la page suivante
         await page.waitForNavigation({ waitUntil: 'networkidle0' });
 
         // Step 5: Remplir le champ mot de passe
-        await new Promise(resolve => setTimeout(resolve, 3000)); // Attendre 3 secondes
+        await new Promise(resolve => setTimeout(resolve, 1000));
         await page.waitForSelector('input[name="new-password"]', { visible: true });
         await page.focus('input[name="new-password"]');
-        await page.keyboard.type('SPOTIFY12345', { delay: 100 });
+        await page.keyboard.type('SPOTIFY12345', { delay: 10 });
 
         // Cliquer sur le bouton pour passer à l'étape suivante
         await page.waitForSelector('button[data-testid="submit"]', { visible: true });
@@ -219,8 +218,8 @@ async function registerWithEmail(email) {
             const button = document.querySelector('button[data-testid="submit"]');
             return button && !button.disabled && button.offsetWidth > 0 && button.offsetHeight > 0;
         });
-        await page.click('button[data-testid="submit"]');
-        await new Promise(resolve => setTimeout(resolve, 2000));
+        // await page.click('button[data-testid="submit"]');
+        // await new Promise(resolve => setTimeout(resolve, 2000));
 
         // Attendre la navigation vers la page suivante
         await page.waitForNavigation({ waitUntil: 'networkidle0' });
@@ -252,15 +251,16 @@ async function registerWithEmail(email) {
         });
         await page.click('button[data-testid="submit"]');
 
-        // Attendre la navigation vers la page de confirmation
         await page.waitForNavigation({ waitUntil: 'networkidle0' });
+
+        await new Promise(resolve => setTimeout(resolve, 20000));
 
         console.log(`Registration completed successfully for ${email}.`);
 
     } catch (error) {
         console.error(`Error during registration for ${email}:`, error);
     } finally {
-        await browser.close(); // Fermer le navigateur
+        await browser.close();
     }
 }
 
