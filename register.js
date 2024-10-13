@@ -172,9 +172,38 @@ const puppeteer = require('puppeteer');
 
 // Liste des emails
 const emails = [
-    'zxcvbnmyyy@gmail.com'
-
+    'grxv124@mail.ru',
+    'lqp94j@mail.ru',
+    '5nhty@mail.ru',
+    'rexa.pl87@mail.ru',
+    'bxpnt237@mail.ru',
+    'qrt19z@mail.ru',
+    'zok63df@mail.ru',
+    'ykf.pl4z@mail.ru',
+    'wxr829ty@mail.ru',
+    'jnv9k3s@mail.ru',
+    'vpqyr77@mail.ru',
+    'gzrt05@mail.ru',
+    'lxwt83v@mail.ru',
+    '3rfwxn@mail.ru',
+    'nsx7fr2@mail.ru',
+    'tqn48kp@mail.ru',
+    'vpxz31@mail.ru',
+    'wlgx0n@mail.ru',
+    'btrgk57@mail.ru',
+    'xrv8pt@mail.ru',
+    'kpt47yn@mail.ru',
+    'flxg92@mail.ru',
+    'dnplx5@mail.ru',
+    '94htpl@mail.ru',
+    'tzq80wp@mail.ru',
+    'ztlwrm21@mail.ru',
+    'knvpx78@mail.ru',
+    'pzxl03g@mail.ru',
+    'bqx49lr@mail.ru',
+    'gntzr5@mail.ru'
 ];
+
 
 const SPOTIFY_SIGNUP_URL = 'https://www.spotify.com/be-nl/signup/?flow_ctx=daa65fb7-da58-413c-adcf-2a21e6af9e14%3A1728527182';
 
