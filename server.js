@@ -6,22 +6,6 @@ const SPOTIFY_REGISTER_URL = 'https://partner-provisioning.spotify.com/starbucks
 
 const usernames = ['US8547584', 'US8547585']; // Remplacez par vos noms d'utilisateur Starbucks
 const lastName = 'Smith'; // Remplacez par votre nom de famille
-// const emails = ['tstpu7768735@aol.com', 'ritrumoyda@gufum.com', 'irrrw4237454@aol.com', 'lelado7551@skrank.com', 'gtc1478gtc1@gmail.com'];
-// const emails = [
-//     'tstpu7768735@aol.com',
-//     'ritrumoyda@gufum.com',
-//     'irrrw4237454@aol.com',
-//     'lelado7551@skrank.com',
-//     'gtc1478gtc1@gmail.com',
-//     'gtc1478gtc12@gmail.com',
-//     'gtc1478gtc13@gmail.com',
-//     'gtc1478gtc14@gmail.com',
-//     'gtc1478gtc15@gmail.com',
-//     'gtc1478gtc16@gmail.com',
-//     'gtc1478gtc17@gmail.com',
-//     'gtc1478gtc18@gmail.com',
-//     'gtc1478gtc111@gmail.com'
-// ];
 
 const emails = [
     // MINE
@@ -189,6 +173,38 @@ const emails = [
     'zpjheifou263@gmail.com',
     'zddq145z@gmail.com',
     'qgefuoj5151@gmail.com',
+
+        // TR SERVICES 13 / 10 / 24
+        'zxcvbnmyyyu@gmail.com',
+        'aqwxcv85zzd@gmail.com',
+        'oahuh56zd@gmail.com',
+        'qizofj154z@gmail.com',
+        'p3r1x74@gmail.com',
+        'l33nnon@gmail.com',
+        'alsajd254aq@gmail.com',
+        'hqpozkd15z@gmail.com',
+        'okjhgf52ze@gmail.com',
+        'iuhnd85zfe@gmail.com',
+        'izhfuls52ej@gmail.com',
+        'okjznf51zd@gmail.com',
+        '854dsdz4@gmail.com',
+        '21sdg65s@gmail.com',
+        'qodjqoizj45q1@gmail.com',
+        '9876543210y@gmail.com',
+        'hjkllkj9876@gmail.com',
+        'cvbnm12345y@gmail.com',
+        'poiuyt56789@gmail.com',
+        'asdfghjklzy@gmail.com',
+        'qwertyuiopyyy@gmail.com',
+        'asdfghjklyyyu@gmail.com',
+        '12345678dqd0@gmail.com',
+        'qwertyuiopyuy@gmail.com',
+        'sjkbvk26xdvb@gmail.com',
+        'zd585dzc@gmail.com',
+        '5z4d45zd@gmail.com',
+        '84ef8s4fs8@gmail.com',
+        '4qz8d4q55@gmail.com',
+
 ];
 
 
@@ -272,12 +288,7 @@ const password = 'SPOTIFY12345'; // Remplacez par votre mot de passe
 
 
 
-
-
-
-
-// PLUS RAPIDE
-
+//
 //
 // const puppeteer = require('puppeteer');
 //
@@ -287,22 +298,43 @@ const password = 'SPOTIFY12345'; // Remplacez par votre mot de passe
 //
 // const usernames = ['US8547584', 'US8547585']; // Remplacez par vos noms d'utilisateur Starbucks
 // const lastName = 'Smith'; // Remplacez par votre nom de famille
-// // const emails = ['tstpu7768735@aol.com', 'ritrumoyda@gufum.com', 'irrrw4237454@aol.com', 'lelado7551@skrank.com', 'gtc1478gtc1@gmail.com'];
+//
+//
 // const emails = [
-//     'tstpu7768735@aol.com',
-//     'ritrumoyda@gufum.com',
-//     'irrrw4237454@aol.com',
-//     'lelado7551@skrank.com',
-//     'gtc1478gtc1@gmail.com',
-//     'gtc1478gtc12@gmail.com',
-//     'gtc1478gtc13@gmail.com',
-//     'gtc1478gtc14@gmail.com',
-//     'gtc1478gtc15@gmail.com',
-//     'gtc1478gtc16@gmail.com',
-//     'gtc1478gtc17@gmail.com',
-//     'gtc1478gtc18@gmail.com',
-//     'gtc1478gtc111@gmail.com'
+//     'zxcvbnmyyyu@gmail.com',
+//     'aqwxcv85zzd@gmail.com',
+//     'oahuh56zd@gmail.com',
+//     'qizofj154z@gmail.com',
+//     'p3r1x74@gmail.com',
+//     'l33nnon@gmail.com',
+//     'alsajd254aq@gmail.com',
+//     'hqpozkd15z@gmail.com',
+//     'okjhgf52ze@gmail.com',
+//     'iuhnd85zfe@gmail.com',
+//     'izhfuls52ej@gmail.com',
+//     'okjznf51zd@gmail.com',
+//     '854dsdz4@gmail.com',
+//     '21sdg65s@gmail.com',
+//     'qodjqoizj45q1@gmail.com',
+//     '9876543210y@gmail.com',
+//     'hjkllkj9876@gmail.com',
+//     'cvbnm12345y@gmail.com',
+//     'poiuyt56789@gmail.com',
+//     'asdfghjklzy@gmail.com',
+//     'qwertyuiopyyy@gmail.com',
+//     'asdfghjklyyyu@gmail.com',
+//     '12345678dqd0@gmail.com',
+//     'qwertyuiopyuy@gmail.com',
+//     'sjkbvk26xdvb@gmail.com',
+//     'zd585dzc@gmail.com',
+//     '5z4d45zd@gmail.com',
+//     '84ef8s4fs8@gmail.com',
+//     '4qz8d4q55@gmail.com',
 // ];
+//
+//
+//
+//
 // const password = 'SPOTIFY12345'; // Remplacez par votre mot de passe
 //
 // (async () => {
@@ -310,7 +342,7 @@ const password = 'SPOTIFY12345'; // Remplacez par votre mot de passe
 //         const email = emails[i];
 //         const username = usernames[i % usernames.length]; // Gère le cas où le nombre d'e-mails est supérieur au nombre d'utilisateurs
 //
-//         const browser = await puppeteer.launch({ headless: true }); // Lancer le navigateur en mode headless
+//         const browser = await puppeteer.launch({ headless: false }); // Lancer le navigateur en mode headless
 //         const page = await browser.newPage();
 //
 //         try {
@@ -378,12 +410,3 @@ const password = 'SPOTIFY12345'; // Remplacez par votre mot de passe
 //         }
 //     }
 // })();
-//
-
-
-
-
-
-
-
-

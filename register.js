@@ -172,7 +172,8 @@ const puppeteer = require('puppeteer');
 
 // Liste des emails
 const emails = [
-    'zpjheifou262@gmail.com',
+    'zxcvbnmyyy@gmail.com'
+
 ];
 
 const SPOTIFY_SIGNUP_URL = 'https://www.spotify.com/be-nl/signup/?flow_ctx=daa65fb7-da58-413c-adcf-2a21e6af9e14%3A1728527182';
