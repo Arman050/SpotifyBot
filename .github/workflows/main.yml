@@ -75,7 +75,7 @@ jobs:
       - name: Install Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '18'
+          node-version: '18'  # Mettre à jour vers une version compatible
 
       - name: Install Chromium dependencies
         run: |
@@ -108,11 +108,12 @@ jobs:
       - name: Install Puppeteer
         run: npm install puppeteer
 
-      - name: Install Chrome
+      - name: Install Google Chrome
         run: |
-          mkdir -p ~/.cache/puppeteer
-          wget -O ~/.cache/puppeteer/chrome-linux.zip https://chromium.googlesource.com/chromium-browser/+/refs/heads/main/BUILD.gn
-          unzip -q ~/.cache/puppeteer/chrome-linux.zip -d ~/.cache/puppeteer
+          wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+          echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" | sudo tee /etc/apt/sources.list.d/google-chrome.list
+          sudo apt-get update
+          sudo apt-get install -y google-chrome-stable
 
       - name: Install other dependencies
         run: npm install
