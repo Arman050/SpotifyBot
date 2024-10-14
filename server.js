@@ -284,7 +284,7 @@ const addCustomCursor = async (page) => {
 
         const browser = await puppeteer.launch({
             headless: true,
-            args: ['--no-sandbox', '--disable-setuid-sandbox'],
+            // args: ['--no-sandbox', '--disable-setuid-sandbox'],
             defaultViewport: { width: 1280, height: 720 }
         });
 
