@@ -228,7 +228,7 @@ const lastName = 'Smith'; // Remplacez par votre nom de famille
 
 const emails = [
     // Vos e-mails ici
-    'ritrumoyda@gufum.com',
+    'aqwxsz1@aol.com',
     'irrrw4237454@aol.com',
     // Ajoutez d'autres e-mails selon vos besoins
 ];
@@ -294,6 +294,8 @@ const addCustomCursor = async (page) => {
         });
 
         const page = await browser.newPage();
+
+        await page.deleteCookie(...await page.cookies());
 
         await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.150 Safari/537.36');
 
