@@ -282,13 +282,9 @@ const addCustomCursor = async (page) => {
         const email = emails[i];
         const username = usernames[i % usernames.length]; // Gère le cas où le nombre d'e-mails est supérieur au nombre d'utilisateurs
 
-        const browser = await puppeteer.launch({
-            headless: true,
-            // args: ['--no-sandbox', '--disable-setuid-sandbox'],
-            defaultViewport: { width: 1280, height: 720 }
-        });
-
+        const browser = await puppeteer.launch({ headless: true}); // Lancer le navigateur en mode headless
         const page = await browser.newPage();
+
         await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.150 Safari/537.36');
 
         // Ajouter le curseur personnalisé
