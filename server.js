@@ -283,7 +283,7 @@ const addCustomCursor = async (page) => {
         const username = usernames[i % usernames.length]; // Gère le cas où le nombre d'e-mails est supérieur au nombre d'utilisateurs
 
         const browser = await puppeteer.launch({
-            headless: false,
+            headless: true,
             args: ['--no-sandbox', '--disable-setuid-sandbox'],
             defaultViewport: { width: 1280, height: 720 }
         });
