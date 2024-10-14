@@ -20,6 +20,7 @@ const emails = [
     'gtc1478gtc15@gmail.com',
     'gtc1478gtc16@gmail.com',
     'gtc1478gtc17@gmail.com',
+    // 'gtc1478gtc18@gmail.com', // PASSWORD OR MAIL INCORRECT
     'gtc1478gtc111@gmail.com',
     'jjnho3726019@aol.com',
     'fyhni7189343@aol.com',
@@ -42,6 +43,7 @@ const emails = [
     'lsjvd7435555@aol.com',
     'khqnv9055479@aol.com',
     'uijhu8068949@aol.com',
+    // 'qbkrx2764066@aol.com', // MAIL OR PASS INCORRECT
     'aycud3844250@aol.com',
     'tsucn3745144@aol.com',
     'mnqjq9089737@aol.com',
@@ -49,6 +51,8 @@ const emails = [
     'vnfzq6125123@aol.com',
     'ddkxh9876616@aol.com',
     'ptkhj6545639@aol.com',
+    // 'vecjs1071017@aol.com', // PASS INCORRECT
+    // 'sijrn8715505@aol.com', // PASS INCORRECT
     'rlxzo0338750@aol.com',
     'wljmk2968286@aol.com',
     'nugtn0539422@aol.com',
