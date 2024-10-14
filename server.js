@@ -140,11 +140,11 @@ const password = 'SPOTIFY12345'; // Remplacez par votre mot de passe
         const username = usernames[i % usernames.length]; // Gère le cas où le nombre d'e-mails est supérieur au nombre d'utilisateurs
 
         const browser = await puppeteer.launch({
+            headless: true, // Exécute Chrome en mode headless
             executablePath: '/usr/bin/google-chrome',
-            headless: false,
-            args: ['--no-sandbox', '--disable-setuid-sandbox'],
+            args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage'], // Ajout de l'argument pour éviter les problèmes de mémoire
+        });
 
-        }); // Lancer le navigateur en mode headless
         const page = await browser.newPage();
 
         try {
