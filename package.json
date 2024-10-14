@@ -15,6 +15,8 @@
     "express": "^4.21.1",
     "express-session": "^1.18.1",
     "node-cron": "^3.0.3",
-    "puppeteer": "^23.5.1"
+    "puppeteer": "^23.5.3",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2"
   }
 }
