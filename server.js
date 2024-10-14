@@ -288,8 +288,8 @@ const addCustomCursor = async (page) => {
         const username = usernames[i % usernames.length]; // Gère le cas où le nombre d'e-mails est supérieur au nombre d'utilisateurs
 
         const browser = await puppeteer.launch({
-            headless: false, // Exécute Chrome en mode headless
-            // executablePath: '/usr/bin/google-chrome',
+            headless: true, // Exécute Chrome en mode headless
+            executablePath: '/usr/bin/google-chrome',
             args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage'], // Ajout de l'argument pour éviter les problèmes de mémoire
         });
 
